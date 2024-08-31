@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador de Estaciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1>Estaciones de Juego</h1>
+
+    <div class="stations-container" id="stations-container">
+        <div class="station" id="station-1">
+            <h2>Estación 1</h2>
+            <p id="time-1">00:00:00</p>
+            <button class="add-time add-time-10" onclick="adjustTime('time-1', 600)">+10 Minutos</button>
+            <button class="add-time add-time-30" onclick="adjustTime('time-1', 1800)">+30 Minutos</button>
+            <button class="subtract-time" onclick="adjustTime('time-1', -60)">-1 Minuto</button>
+            <button class="set-time" onclick="setTime('time-1')">
+                <img src="TecladoImg.png" alt="Establecer Tiempo" />
+            </button>
+            <button class="remove-station" onclick="removeStation('station-1')">Eliminar Estación</button>
+        </div>
+
+        <div class="station" id="station-2">
+            <h2>Estación 2</h2>
+            <p id="time-2">00:00:00</p>
+            <button class="add-time add-time-10" onclick="adjustTime('time-2', 600)">+10 Minutos</button>
+            <button class="add-time add-time-30" onclick="adjustTime('time-2', 1800)">+30 Minutos</button>
+            <button class="subtract-time" onclick="adjustTime('time-2', -60)">-1 Minuto</button>
+            <button class="set-time" onclick="setTime('time-2')">
+                <img src="TecladoImg.png" alt="Establecer Tiempo" />
+            </button>
+            <button class="remove-station" onclick="removeStation('station-2')">Eliminar Estación</button>
+        </div>
+    </div>
+
+    <button id="add-station" onclick="addStation()">Agregar Estación</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

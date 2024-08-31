@@ -1,0 +1,119 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco por defecto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #fff; /* Color del texto del título */
+}
+
+.stations-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.station {
+    background-color: #333; /* Fondo oscuro para las estaciones */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Sombra más pronunciada para el contraste */
+    width: 300px;
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Botones de tiempo */
+.add-time {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.subtract-time {
+    background-color: #F44336;
+    color: white;
+}
+
+.remove-station {
+    background-color: #FF5722;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.remove-station:hover {
+    background-color: #E64A19;
+    transform: translateY(-2px);
+}
+
+.remove-station:active {
+    background-color: #D84315;
+    transform: translateY(0);
+}
+
+/* Botón de agregar estación */
+#add-station {
+    background-color: #2196F3;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#add-station:hover {
+    background-color: #1976D2;
+    transform: translateY(-2px);
+}
+
+#add-station:active {
+    background-color: #1565C0;
+    transform: translateY(0);
+}
+
+/* Botón de establecer tiempo */
+.set-time {
+    background-color: #000; /* Fondo negro */
+    border: none; /* Sin borde */
+    padding: 0; /* Sin padding adicional */
+    cursor: pointer; /* Cursor de mano */
+}
+
+.set-time img {
+    width: 24px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+.set-time:hover img {
+    opacity: 0.8; /* Imagen ligeramente opaca al pasar el ratón */
+}
+
+.set-time:active img {
+    opacity: 1; /* Imagen completamente visible cuando se presiona */
+}
+
+
+
+
